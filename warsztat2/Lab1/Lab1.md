@@ -84,6 +84,19 @@ In this section you are going to install Azure Data Studio and Power BI Desktop 
     <br>https://aka.ms/pbiSingleInstaller
     <br>![](./Media/Lab1-Image06.png)
 
+
+## Load Backup into Azure SQL database
+In this section you will load backup data into your Azure SQL database. You will need this data later in this lab.
+
+1. Go to Azure portal and find your datalake
+2. Create new container named **NYCdataset**
+3. Upload there **NYCDataSets.bacpac** file from **files** directory
+4. In Azure Portal go to your Azure SQL Database
+5. Click **Import Database** from top menu
+6. Create new database using your back-up file uploadad into datalake.
+
+- **Database name:** operationalsql-suffix
+
 ## Create Azure Synapse Analytics data warehouse objects
 In this section you will connect to Azure Synapse Analytics to create the database objects used to host and process data.
 
